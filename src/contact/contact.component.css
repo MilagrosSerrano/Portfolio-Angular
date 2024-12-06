@@ -77,6 +77,6 @@ textarea{
         @apply px-0
     }
     .subTitle{
-        @apply text-xs
+        @apply px-0
     }
 }
