@@ -71,3 +71,12 @@ textarea{
         @apply text-xs
     }
 }
+
+@media (max-width: 470px){
+    .formContainer{
+        @apply px-0
+    }
+    .subTitle{
+        @apply text-xs
+    }
+}
