@@ -1,0 +1,48 @@
+footer {
+  @apply bg-dark-3 h-8 flex items-center justify-around  p-6 text-sm bottom-0 w-full;
+}
+
+.mail {
+  @apply bg-dark-3 flex gap-2 items-center;
+}
+
+.mail:hover, .gitHub:hover, .linkedin:hover {
+  @apply border-b-2 border-slate-400;
+}
+
+.gitHub, .linkedin{
+    @apply flex items-center p-1 gap-2
+}
+
+.cv img:nth-child(2),
+.gitHub img:nth-child(2),
+.linkedin img:nth-child(2) {
+  @apply hidden;
+}
+
+.cv:hover img:nth-child(1),
+.gitHub:hover img:nth-child(1),
+.linkedin:hover img:nth-child(1) {
+  @apply hidden;
+}
+
+.cv:hover img:nth-child(2),
+.gitHub:hover img:nth-child(2),
+.linkedin:hover img:nth-child(2) {
+  @apply block;
+}
+
+@media (max-width:470px){
+  footer img{
+    @apply w-3 text-xs
+  }
+}
+
+@media (max-width:425px){
+  footer a:nth-child(1){
+    @apply hidden
+  }
+  footer{
+    @apply justify-center gap-5
+  }
+}

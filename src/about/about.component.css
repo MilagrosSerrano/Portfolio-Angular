@@ -1,0 +1,100 @@
+.about {
+  @apply flex items-center justify-center p-12 gap-6;
+}
+
+.subTitle {
+  @apply text-xl;
+}
+
+svg {
+  @apply h-6;
+}
+
+.location {
+  @apply flex gap-1 py-1 fill-red items-end;
+}
+
+.btnsAbout{
+  @apply flex flex-col items-start
+}
+
+.btnsLink {
+  @apply flex gap-3 py-2 items-center;
+}
+
+.mail {
+  @apply bg-primary-2 rounded-md p-1 flex gap-2 fill-white text-white;
+}
+
+.mail:hover {
+  @apply bg-primary-3;
+}
+
+.cv img:nth-child(2), .gitHub img:nth-child(2), .linkedin img:nth-child(2){
+  @apply hidden;
+}
+
+.cv:hover img:nth-child(1), .gitHub:hover img:nth-child(1), .linkedin:hover img:nth-child(1){
+  @apply hidden
+}
+
+.cv:hover img:nth-child(2), .gitHub:hover img:nth-child(2), .linkedin:hover img:nth-child(2){
+  @apply block
+}
+
+@media (max-width:900px){
+  .profileImg{
+    @apply w-300
+  }
+  .btnsAbout{
+    @apply flex-col
+  }
+}
+
+@media (max-width: 780px){
+  .about{
+    @apply flex flex-col
+  }
+  .profileImg{
+    @apply w-400
+  }
+  .description{
+    @apply flex flex-col items-center
+  }
+  .subTitle{
+    @apply text-lg
+  }
+  .btnsAbout{
+    @apply text-sm items-center
+  }
+  .btnsAbout img{
+    @apply w-5
+  }
+}
+
+@media (max-width:480px){
+  .title{
+    @apply text-2xl
+  }
+  .subTitle{
+    @apply text-base
+  }
+  .location, .btnsAbout{
+    @apply text-sm
+  }
+}
+
+@media (max-width: 390px){
+  .title{
+    @apply text-xl
+  }
+  .subTitle{
+    @apply text-sm
+  }
+  .location, .btnsAbout{
+    @apply text-xs
+  }
+  .location img:nth-child(1), .btnsAbout img{
+    @apply w-4
+  }
+}

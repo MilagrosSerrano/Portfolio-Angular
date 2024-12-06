@@ -1,0 +1,42 @@
+<section class="about">
+  <img
+    [src]="imageURL"
+    [alt]="altImg"
+    [width]="profileSize"
+    class="profileImg"
+  />
+  <div class="description">
+    <p class="title">¡Hola, soy Milagros! 👋🏻</p>
+    <p class="subTitle">Estudiante de Programación Full-Stack</p>
+    <p class="location">
+      <img [src]="location.src" [alt]="location.alt" [width]="width" /> Mar del
+      Plata, Argentina.
+    </p>
+    <div class="btnsAbout">
+      <a href="mailto:serranomilagros23@gmail.com" class="mail"
+        ><img [src]="mail.src" [alt]="" [width]="width" />{{ mail.address }}</a
+      >
+      <div class="btnsLink">
+        <a
+          href="MilagrosSerrano1.pdf"
+          class="cv"
+          download="MilagrosSerrano1.pdf"
+          ><img [src]="cv.src" [alt]="cv.alt" [width]="width" />
+          <img [src]="cv.src2" [alt]="cv.alt" [width]="width"
+        /></a>
+        <a [href]="github.url" class="gitHub"
+          ><img [src]="github.src" [alt]="github.alt" [width]="width" /><img
+            [src]="github.src2"
+            [alt]="github.alt"
+            [width]="width"
+        /></a>
+        <a [href]="linkedin.url" class="linkedin"
+          ><img [src]="linkedin.src" [alt]="linkedin.alt" [width]="width" /><img
+            [src]="linkedin.src2"
+            [alt]="linkedin.alt"
+            [width]="width"
+        /></a>
+      </div>
+    </div>
+  </div>
+</section>

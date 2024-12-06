@@ -1,0 +1,37 @@
+<app-nav></app-nav>
+
+<div class="formContainer">
+  <div class="info">
+    <h1 class="title">¡Contactame!</h1>
+    <div class="subTitle">
+      <h3>Gracias por ver mi portafolio.</h3>
+      <h3>¡Espero que te hayan gustado mis trabajos!</h3>
+    </div>
+    <p class="description">
+      Actualmente estoy disponible para trabajar, si te gustaría que forme parte
+      de tu equipo, no dudes en contactarme a través del formulario que se
+      encuentra debajo.
+    </p>
+  </div>
+
+  <form action="https://formspree.io/f/xvgoyjer" method="POST" class="form">
+    <div class="inputs">
+      <label>
+        Nombre:
+        <input type="text" name="nombre" />
+      </label>
+      <label>
+        Email:
+        <input type="email" name="email" />
+      </label>
+      <label>
+        Mensaje:
+        <textarea name="message"></textarea>
+      </label>
+    </div>
+
+    <button type="submit" class="enviar">Enviar</button>
+  </form>
+</div>
+
+<app-footer></app-footer>

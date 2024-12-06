@@ -1,0 +1,27 @@
+.tech{
+    @apply text-center p-10
+}
+.techStack{
+    @apply flex gap-8 items-center justify-center p-6
+}
+.techImg{
+    @apply h-10
+}
+.endTech{
+    @apply w-2/5 mx-auto border-slate-400 border
+}
+
+@media (max-width:735px){
+    .techStack img{
+        @apply w-9
+    }
+}
+
+@media (max-width:590px){
+    .techStack{
+        @apply flex-wrap
+    }
+    .techStack img{
+        @apply w-8
+    }
+}

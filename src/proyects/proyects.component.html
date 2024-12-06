@@ -1,0 +1,126 @@
+<section class="proyects" id="proyects">
+  <h1 class="title">Proyectos</h1>
+  <div class="proyect">
+    <img
+      [src]="foodStore.srcP"
+      alt=""
+      [width]="widthP"
+      class="imgP"
+    />
+    <div class="content">
+      <h1 class="title">{{ foodStore.title }}</h1>
+      <h3 class="subTitle">{{ foodStore.tipo }}</h3>
+      <p class="description" >{{ foodStore.description }}</p>
+      <div class="techUsed">
+        <button class="btnTech">
+          <img
+            [src]="foodStore.tech1.src"
+            [alt]="foodStore.tech1.alt"
+            [width]="widthT"
+          />{{ foodStore.tech1.alt }}
+        </button>
+        <button class="btnTech">
+          <img
+            [src]="foodStore.tech2.src"
+            [alt]="foodStore.tech2.alt"
+            [width]="widthT"
+          />{{ foodStore.tech2.alt }}
+        </button>
+      </div>
+      <div class="proyectLinks">
+        <a [href]="foodStore.linkP" class="linkP">
+          <img
+            [src]="pIcons.proyect.icon1.src"
+            [alt]="pIcons.proyect.icon1.alt"
+            [width]="widthL" /><img
+            [src]="pIcons.proyect.icon2.src"
+            [alt]="pIcons.proyect.icon1.alt"
+            [width]="widthL"
+        /></a>
+        <a [href]="foodStore.linkG" class="linkG">
+          <img
+            [src]="pIcons.github.icon1.src"
+            [alt]="pIcons.github.icon1.alt"
+            [width]="widthL" /><img
+            [src]="pIcons.github.icon2.src"
+            [alt]="pIcons.github.icon1.alt"
+            [width]="widthL"
+        /></a>
+      </div>
+    </div>
+  </div>
+  <div class="proyect">
+    <img [src]="tateti.srcP" [alt]="tateti.altP" [width]="widthP" />
+    <div class="content">
+      <h1 class="title">{{tateti.title}}</h1>
+      <h3 class="subTitle">{{tateti.tipo}}</h3>
+      <p class="description"  >{{tateti.description}}</p>
+      <div class="techUsed">
+        <button class="btnTech">
+          <img [src]="tateti.tech1.src" [alt]="tateti.tech1.alt" [width]="widthT"/> {{tateti.tech1.alt}}
+        </button>
+        <button class="btnTech">
+          <img [src]="tateti.tech2.src" [alt]="tateti.tech2.alt" [width]="widthT"/> {{tateti.tech2.alt}}
+        </button>
+      </div>
+      <div class="proyectLinks">
+        <a [href]="tateti.linkP" class="linkP">
+          <img
+            [src]="pIcons.proyect.icon1.src"
+            [alt]="pIcons.proyect.icon1.alt"
+            [width]="widthL" /><img
+            [src]="pIcons.proyect.icon2.src"
+            [alt]="pIcons.proyect.icon1.alt"
+            [width]="widthL"
+        /></a>
+        <a [href]="tateti.linkG" class="linkG">
+          <img
+            [src]="pIcons.github.icon1.src"
+            [alt]="pIcons.github.icon1.alt"
+            [width]="widthL" /><img
+            [src]="pIcons.github.icon2.src"
+            [alt]="pIcons.github.icon1.alt"
+            [width]="widthL"
+        /></a>
+      </div>
+    </div>
+  </div>
+  <div class="proyect">
+    <img [src]="metas.srcP" [alt]="metas.altP" />
+    <div class="content">
+      <h1 class="title">{{metas.title}}</h1>
+      <h3 class="subTitle">{{metas.tipo}}</h3>
+      <p class="description" >{{metas.description}}</p>
+      <div class="techUsed">
+        <button class="btnTech">
+          <img [src]="metas.tech1.src" [alt]="metas.tech1.alt" [width]="widthT"/>
+          {{metas.tech1.alt}}
+        </button>
+        <button class="btnTech">
+          <img [src]="metas.tech2.src" [alt]="metas.tech2.alt" [width]="widthT" />
+          {{metas.tech2.alt}}
+        </button>
+      </div>
+      <div class="proyectLinks">
+        <a [href]="metas.linkP" class="linkP">
+            <img
+              [src]="pIcons.proyect.icon1.src"
+              [alt]="pIcons.proyect.icon1.alt"
+              [width]="widthL" /><img
+              [src]="pIcons.proyect.icon2.src"
+              [alt]="pIcons.proyect.icon1.alt"
+              [width]="widthL"
+          /></a>
+          <a [href]="metas.linkG" class="linkG">
+            <img
+              [src]="pIcons.github.icon1.src"
+              [alt]="pIcons.github.icon1.alt"
+              [width]="widthL" /><img
+              [src]="pIcons.github.icon2.src"
+              [alt]="pIcons.github.icon1.alt"
+              [width]="widthL"
+          /></a>
+      </div>
+    </div>
+  </div>  
+</section>

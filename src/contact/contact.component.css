@@ -1,0 +1,67 @@
+.formContainer{
+    @apply p-14 flex flex-col items-center gap-10
+}
+.info{
+    @apply text-center w-2/5
+}
+.title{
+    @apply text-primary-2 text-4xl
+}
+.form{
+    @apply w-500 mx-auto flex flex-col border-2 border-primary-2 items-center p-4 rounded-md
+}
+.subTitle{
+    @apply font-medium text-lg text-center p-3
+}
+p{
+    @apply text-sm text-center pb-6
+}
+.inputs{
+    @apply pt-4 pb-8 flex flex-col gap-4
+}
+label{
+    @apply flex flex-col gap-1
+}
+
+input, textarea{
+    @apply border-2 border-slate-400 bg-dark-2 rounded-md w-96 p-1
+}
+
+textarea{
+    @apply h-24
+}
+
+.enviar{
+    @apply border-none bg-dark-3 rounded-md py-1 px-2
+}
+
+.enviar:hover{
+    @apply bg-dark-1
+}
+
+@media (max-width:1070px){
+    .formContainer{
+        @apply px-6 py-10
+    }
+    .info{
+        @apply w-3/4
+    }
+}
+
+@media (max-width:750px){
+    .inputs, .enviar{
+        @apply text-sm
+    }
+    input, textarea{
+        @apply p-0
+    }
+}
+
+@media (max-width:570px){
+    .form{
+        @apply w-300
+    }
+    input, textarea{
+        @apply w-250
+    }
+}

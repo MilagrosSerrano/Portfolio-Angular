@@ -1,0 +1,94 @@
+.proyects{
+    @apply flex flex-col items-center p-10 gap-10
+}
+
+.proyect{
+    @apply px-1 pt-1 pb-4 border-2 border-slate-400 rounded-lg w-1100
+}
+
+.description{
+    @apply w-full
+}
+
+.content{
+    @apply pl-2 pt-4
+}
+
+.imgP{
+    @apply rounded-t-lg mb-4
+}
+
+.subTitle{
+    @apply font-medium text-lg
+}
+
+.techUsed{
+    @apply flex gap-2 pt-3 pb-0
+}
+
+.btnTech{
+    @apply flex border border-dark-3 rounded-xl py-1 px-1.5 bg-dark-3 text-sm items-center gap-1
+}
+
+.proyectLinks{
+    @apply flex gap-2 py-4 px-1.5
+}
+.linkP img:nth-child(2), .linkG img:nth-child(2){
+    @apply hidden
+}
+
+.linkP:hover img:nth-child(1), .linkG:hover img:nth-child(1){
+    @apply hidden
+}
+
+.linkP:hover img:nth-child(2), .linkG:hover img:nth-child(2){
+    @apply block
+}
+
+@media (max-width: 1215px){
+    .proyect{
+        @apply w-900
+    }
+}
+
+@media (max-width: 1000px){
+    .proyect{
+        @apply w-800
+    }
+}
+
+@media (max-width: 880px){
+    .proyect{
+        @apply w-700
+    }
+}
+
+@media (max-width:750px){
+    .proyect{
+        @apply w-500
+    }
+}
+
+@media (max-width:550px){
+    .proyect{
+        @apply w-400
+    }
+}
+
+@media (max-width:450px){
+    .proyect{
+        @apply w-300
+    }
+    .title{
+        @apply text-2xl
+    }
+    .subTitle{
+        @apply text-base
+    }
+    .description{
+        @apply text-sm
+    }
+    .btnTech img{
+       @apply w-4
+    }
+}

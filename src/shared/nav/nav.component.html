@@ -1,0 +1,26 @@
+<nav class="navBar">
+  <div class="desktop"> 
+    <button (click)="setToggle()" class="openBtn"><img [src]="menu.src" [alt]="menu.alt" [width]="menu.width"></button>
+    <ul class="desktopLinks">
+      <li><a href="">Inicio</a></li>
+      <li><a href="#info" >Sobre Mi</a></li>
+      <li><a href="#tech">Tecnologías</a></li>
+      <li><a href="#proyects">Proyectos</a></li>
+      <li><a [routerLink]="['/contact']">Contacto</a></li>
+    </ul>
+  </div>
+ @if (toggle){
+  <div class="mobile" [ngClass]="toggle ? 'open' : 'closed'">
+    <button (click)="setToggle()" class="close"><img [src]="menu.src2" [alt]="menu.alt" [width]="menu.width"></button>
+    <ul class="mobileLinks">
+      <li><a href="" (click)="setToggle()">Inicio</a></li>
+      <li><a href="#info" (click)="setToggle()">Sobre Mi</a></li>
+      <li><a href="#tech"(click)="setToggle()">Tecnologías</a></li>
+      <li><a href="#proyects"(click)="setToggle()">Proyectos</a></li>
+      <li><a routerLink="/contact"(click)="setToggle()">Contacto</a></li>
+    </ul>
+  </div>
+}
+  
+</nav>
+
