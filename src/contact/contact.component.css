@@ -76,7 +76,13 @@ textarea{
     .formContainer{
         @apply px-0
     }
+    .info{
+        @apply w-full
+    }
     .subTitle{
         @apply px-0
+    }
+    .description{
+        @apply px-3
     }
 }
