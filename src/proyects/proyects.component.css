@@ -1,5 +1,5 @@
 .proyects{
-    @apply flex flex-col items-center p-10 gap-10
+    @apply flex flex-col items-center p-10 gap-10 scroll-my-20
 }
 
 .proyect{
