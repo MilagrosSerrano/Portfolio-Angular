@@ -16,11 +16,25 @@ export class NavComponent {
     alt: 'menu',
     width: '25',
   };
+
   toggle: boolean = false;
+
+  onContact: boolean = false;
+  
 
   setToggle() {
     setTimeout(() => {
       this.toggle = !this.toggle;
-    }, 100);
+    }, 200);
+  }
+
+  scroll(el:string, position:ScrollLogicalPosition){
+    document.getElementById(el)?.scrollIntoView({behavior: 'smooth', block: `${position}`, inline:'center'});
+  }
+
+
+  handleClick(el:string, position:ScrollLogicalPosition){
+    this.setToggle();
+    this.scroll(el,position);
   }
 }

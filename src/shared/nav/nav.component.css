@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
-  @apply border-b-primary-1 border-b-4;
+  @apply border-b-primary-1 border-b-4 cursor-pointer;
 }
 
 .mobile {
