@@ -1,13 +1,29 @@
 .about {
-  @apply flex items-center justify-center p-12 gap-6;
+  @apply flex items-center justify-center py-36 gap-48;
 }
 
+.profilePic{
+  @apply rounded-full border-none size-400
+  bg-[url('/profilePic.jpg')] bg-center bg-[auto_460px] shadow-3xl ring-primary-2 ring-15 shadow-primary-1; 
+}
+
+.profileImg{
+  @apply object-cover
+}
 .subTitle {
   @apply text-xl;
 }
 
 svg {
   @apply h-6;
+}
+
+.cv{
+  @apply flex border-primary-1 border-solid border-2 rounded-md p-2 gap-2
+}
+
+.cv:hover{
+  @apply bg-primary-1
 }
 
 .location {
@@ -23,22 +39,21 @@ svg {
 }
 
 .mail {
-  @apply bg-primary-2 rounded-md p-1 flex gap-2 fill-white text-white;
+  @apply p-1 flex gap-2 fill-white text-white;
 }
 
-.mail:hover {
-  @apply bg-primary-3;
+.mail:hover{
+ @apply text-slate-300 
 }
-
-.cv img:nth-child(2), .gitHub img:nth-child(2), .linkedin img:nth-child(2){
+.gitHub img:nth-child(2), .linkedin img:nth-child(2){
   @apply hidden;
 }
 
-.cv:hover img:nth-child(1), .gitHub:hover img:nth-child(1), .linkedin:hover img:nth-child(1){
+.gitHub:hover img:nth-child(1), .linkedin:hover img:nth-child(1){
   @apply hidden
 }
 
-.cv:hover img:nth-child(2), .gitHub:hover img:nth-child(2), .linkedin:hover img:nth-child(2){
+.gitHub:hover img:nth-child(2), .linkedin:hover img:nth-child(2){
   @apply block
 }
 

@@ -2,10 +2,13 @@
 module.exports = {
   content: [],
   theme: {
+    boxShadow:{
+      '3xl': '0 0 100px 40px rgba(247, 7, 143, 1)'
+    },
     colors:{
       'primary-1': '#f7078f',
-      'primary-2': '#fb459b',
-      'primary-3': '#ff64a7',
+      'primary-2': '#981961',
+      'primary-3': '#ff026f',
       'dark-1': '#000717',
       'dark-2': '#1d212c',
       'dark-3': '#353842',
@@ -30,6 +33,9 @@ module.exports = {
         '800': '800px',
         '900': '900px',
         '1100': '1100px'
+      },
+      ringWidth: {
+        '15': '15px',
       }
     },
   },
