@@ -57,16 +57,13 @@ svg {
   @apply block
 }
 
-@media (max-width:900px){
-  .profileImg{
-    @apply w-300
-  }
-  .btnsAbout{
-    @apply flex-col
+@media (max-width:1050px){
+  .about{
+    @apply gap-28 p-20
   }
 }
 
-@media (max-width: 780px){
+@media (max-width: 1020px){
   .about{
     @apply flex flex-col
   }
@@ -87,7 +84,13 @@ svg {
   }
 }
 
-@media (max-width:480px){
+@media (max-width:590px){
+  .about{
+    @apply px-4
+  }
+  .profilePic{
+    @apply size-300 bg-[auto_360px]
+  }
   .title{
     @apply text-2xl
   }
@@ -100,6 +103,9 @@ svg {
 }
 
 @media (max-width: 390px){
+  .profilePic{
+    @apply size-250 bg-[auto_280px]
+  }
   .title{
     @apply text-xl
   }
