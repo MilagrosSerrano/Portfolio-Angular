@@ -14,6 +14,10 @@
   @apply text-xl;
 }
 
+.socialMedia{
+  @apply flex gap-4
+}
+
 svg {
   @apply h-6;
 }
@@ -105,6 +109,12 @@ svg {
 @media (max-width: 390px){
   .profilePic{
     @apply size-250 bg-[auto_280px]
+  }
+  .btnsLink{
+    @apply flex-col gap-1 p-1
+  }
+  .socialMedia{
+    @apply hidden
   }
   .title{
     @apply text-xl
