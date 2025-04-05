@@ -3,7 +3,8 @@ module.exports = {
   content: [],
   theme: {
     boxShadow:{
-      '3xl': '0 0 100px 40px rgba(247, 7, 143, 1)'
+      '3xl': '0 0 100px 40px rgba(247, 7, 143, 1)',
+      'xl': '0 0 100px 32px rgba(247, 7, 143, 1)'
     },
     colors:{
       'primary-1': '#f7078f',

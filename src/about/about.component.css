@@ -107,8 +107,11 @@ svg {
 }
 
 @media (max-width: 390px){
+  .about{
+    @apply gap-20
+  }
   .profilePic{
-    @apply size-250 bg-[auto_280px]
+    @apply size-200 bg-[auto_220px] shadow-xl
   }
   .btnsLink{
     @apply flex-col gap-1 p-1
