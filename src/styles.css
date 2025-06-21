@@ -10,7 +10,6 @@
     scroll-behavior: smooth
 }
 
-
 body{
     @apply bg-dark-2 text-slate-300 font-system font-normal overflow-x-hidden scroll-smooth;
 }    
