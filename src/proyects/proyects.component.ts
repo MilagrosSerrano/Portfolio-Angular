@@ -19,7 +19,6 @@ export class ProyectsComponent {
       },
       icon2: {
         src: './icons/external-link(1).png',
-        alt: 'externalLink',
       },
     },
     github: {
@@ -29,7 +28,6 @@ export class ProyectsComponent {
       },
       icon2: {
         src: './icons/github(1).png',     
-        alt: 'github',
       },
     },
   };

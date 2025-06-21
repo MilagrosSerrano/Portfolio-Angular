@@ -6,9 +6,6 @@ footer {
   @apply bg-dark-3 flex gap-2 items-center;
 }
 
-.mail:hover, .gitHub:hover, .linkedin:hover {
-  @apply border-b-2 border-slate-400;
-}
 
 .gitHub, .linkedin{
     @apply flex items-center p-1 gap-2

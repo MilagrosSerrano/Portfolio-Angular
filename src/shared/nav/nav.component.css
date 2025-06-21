@@ -1,5 +1,5 @@
 .navBar{
-  @apply sticky top-0
+  @apply fixed top-0 w-full z-10 h-20
 }
 .desktop {
   @apply bg-dark-3 h-11 flex-row-reverse items-center justify-between p-2 ;
@@ -11,6 +11,17 @@
 
 .desktopLinks {
   @apply flex justify-end gap-6 mx-6 ;
+}
+.contact{
+  @apply justify-start 
+}
+
+.contact a{
+  @apply flex gap-2 items-center
+}
+
+.contact a:hover{
+  @apply border-none scale-105 text-white
 }
 
 .mobileLinks {

@@ -1,14 +1,17 @@
 .formContainer{
-    @apply p-14 flex flex-col items-center gap-10
+    @apply flex flex-col items-center justify-center gap-10 
+}
+.formContainer{
+    height: calc(100dvh - 50px);
 }
 .info{
-    @apply text-center w-2/5
+    @apply text-center w-2/5 
 }
 .title{
-    @apply text-primary-2 text-4xl
+    @apply text-primary-1 text-4xl
 }
 .form{
-    @apply w-500 mx-auto flex flex-col border-2 border-primary-2 items-center p-4 rounded-md
+    @apply w-500 mx-auto flex flex-col border-2 border-primary-1 items-center justify-around p-4 rounded-xl h-500
 }
 .subTitle{
     @apply font-medium text-lg text-center p-3

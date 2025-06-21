@@ -1,38 +1,42 @@
-<section class="about" id="about">
-  <div class="profilePic"></div>
+<section class="about" id="about" data-aos="fade-in" data-aos-duration="2200" data-aos-easing="linear">
+  <div
+    class="profilePic animate-float transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg"
+  ></div>
   <div class="description">
-    <p class="title">¡Hola, soy Milagros! 👋🏻</p>
-    <p class="subTitle">Estudiante de Programación Full-Stack</p>
+    <p class="title animate-slideUp">¡Hola, soy Milagros! 👋🏻</p>
+    <p class="subTitle animate-fadeIn delay-300">
+      Estudiante de Programación Full-Stack
+    </p>
+
     <p class="location">
       <img [src]="location.src" [alt]="location.alt" [width]="width" /> Mar del
       Plata, Argentina.
     </p>
-    <div class="btnsAbout">
-      <div class="btnsLink">
-        <a href="mailto:serranomilagros23@gmail.com" class="mail"
-        ><img [src]="mail.src" [alt]="" [width]="width" />{{ mail.address }}</a
-        >
-        <div class="socialMedia">
-
-          <a [href]="github.url" class="gitHub"
-          ><img [src]="github.src" [alt]="github.alt" [width]="width" /><img
-          [src]="github.src2"
-          [alt]="github.alt"
-          [width]="width"
-          /></a>
-          <a [href]="linkedin.url" class="linkedin"
-          ><img [src]="linkedin.src" [alt]="linkedin.alt" [width]="width" /><img
-          [src]="linkedin.src2"
-          [alt]="linkedin.alt"
-          [width]="width"
-          /></a>
-        </div>
-      </div>
-      <a
-        href="MilagrosSerrano-FrontendDeveloper-CV.pdf"
-        class="cv"
-        download="MilagrosSerrano-FrontendDeveloper-CV.pdf"
-        ><img [src]="cv.src" [alt]="cv.alt" [width]="width"/>Descarga mi CV</a>
-    </div>
+    <ul class="social-buttons">
+      <li class="mail-button" style="--i: #333; --j: #000">
+        <a href="mailto:serranomilagros23@gmail.com">
+          <img [src]="mail.src" alt="Mail" [width]="width" />
+          <span class="titleBtns">{{ mail.address }}</span>
+        </a>
+      </li>
+      <li class="linkedin-button" style="--i: #0a66c2; --j: #004182">
+        <a [href]="linkedin.url" target="_blank">
+          <img [src]="linkedin.src" alt="LinkedIn" [width]="width" />
+          <span class="titleBtns">LinkedIn</span>
+        </a>
+      </li>
+      <li class="github-button" style="--i: #9a28cf; --j: #551170">
+        <a [href]="github.url" target="_blank">
+          <img [src]="github.src" alt="GitHub" [width]="width" />
+          <span class="titleBtns">GitHub</span>
+        </a>
+      </li>
+    </ul>
+    <a
+      href="MilagrosSerrano-FrontendDeveloper-CV.pdf"
+      class="cv transition-all duration-300 hover:scale-105 hover:bg-primary-1 hover:text-white"
+      download="MilagrosSerrano-FrontendDeveloper-CV.pdf"
+      ><img [src]="cv.src" [alt]="cv.alt" [width]="width" />Descarga mi CV</a
+    >
   </div>
 </section>

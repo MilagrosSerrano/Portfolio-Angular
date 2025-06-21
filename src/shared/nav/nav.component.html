@@ -1,26 +1,35 @@
 <nav class="navBar">
-  <div class="desktop"> 
-    <button (click)="setToggle()" class="openBtn"><img [src]="menu.src" [alt]="menu.alt" [width]="menu.width"></button>
+  <div class="desktop">
+    <button (click)="setToggle()" class="openBtn">
+      <img [src]="menu.src" [alt]="menu.alt" [width]="menu.width" />
+    </button>
+    @if (!onContact){
     <ul class="desktopLinks">
-      <li><a href="" >Inicio</a></li>
-      <li><a (click)="scroll('info','center')">Sobre Mi</a></li>
-      <li><a (click)="scroll('tech','center')">Tecnologías</a></li>
-      <li><a (click)="scroll('proyects','start')">Proyectos</a></li>
+      <li><a href="">Inicio</a></li>
+      <li><a (click)="scroll('info', 'center')">Sobre Mi</a></li>
+      <li><a (click)="scroll('tech', 'center')">Tecnologías</a></li>
+      <li><a (click)="scroll('proyects', 'start')">Proyectos</a></li>
       <li><a [routerLink]="['/contact']">Contacto</a></li>
     </ul>
+    } @else {
+    <ul class="desktopLinks contact">
+      <li><a href=""><img [src]="volver.src" [alt]="volver.alt" [width]="volver.width">Volver al inicio</a></li>
+    </ul>
+
+    }
   </div>
- @if (toggle){
+  @if (toggle && !onContact){
   <div class="mobile" [ngClass]="toggle ? 'open' : 'closed'">
-    <button (click)="setToggle()" class="close"><img [src]="menu.src2" [alt]="menu.alt" [width]="menu.width"></button>
+    <button (click)="setToggle()" class="close">
+      <img [src]="menu.src2" [alt]="menu.alt" [width]="menu.width" />
+    </button>
     <ul class="mobileLinks">
       <li><a href="" (click)="setToggle()">Inicio</a></li>
-      <li><a (click)="handleClick('info','center')">Sobre Mi</a></li>
-      <li><a (click)="handleClick('tech','center')">Tecnologías</a></li>
-      <li><a (click)="handleClick('proyects','start')">Proyectos</a></li>
+      <li><a (click)="handleClick('info', 'center')">Sobre Mi</a></li>
+      <li><a (click)="handleClick('tech', 'center')">Tecnologías</a></li>
+      <li><a (click)="handleClick('proyects', 'start')">Proyectos</a></li>
       <li><a [routerLink]="['/contact']" (click)="setToggle()">Contacto</a></li>
     </ul>
   </div>
-}
-  
+  }
 </nav>
-

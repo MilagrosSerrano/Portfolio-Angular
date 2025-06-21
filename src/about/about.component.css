@@ -1,134 +1,211 @@
 .about {
-  @apply flex items-center justify-center py-36 gap-48;
+  @apply flex items-center justify-center py-40 gap-48;
 }
 
-.profilePic{
+.profilePic {
   @apply rounded-full border-none size-400
-  bg-[url('/profilePic.jpg')] bg-center bg-[auto_460px] shadow-3xl ring-primary-2 ring-15 shadow-primary-1; 
+  bg-[url('/profilePic.jpg')] bg-center bg-[auto_460px] shadow-3xl ring-primary-2 ring-15 shadow-primary-1;
 }
 
-.profileImg{
-  @apply object-cover
+.profileImg {
+  @apply object-cover;
 }
+
 .subTitle {
   @apply text-xl;
-}
-
-.socialMedia{
-  @apply flex gap-4
 }
 
 svg {
   @apply h-6;
 }
 
-.cv{
-  @apply flex border-primary-1 border-solid border-2 rounded-md p-2 gap-2
+.cv {
+  @apply flex w-44 border-primary-1 border-solid border-2 rounded-xl p-3 gap-2;
 }
 
-.cv:hover{
-  @apply bg-primary-1
+.cv:hover {
+  @apply bg-primary-1 shadow-lg;
 }
 
 .location {
   @apply flex gap-1 py-1 fill-red items-end;
 }
 
-.btnsAbout{
-  @apply flex flex-col items-start
-}
-
-.btnsLink {
-  @apply flex gap-3 py-2 items-center;
-}
-
-.mail {
-  @apply p-1 flex gap-2 fill-white text-white;
-}
-
-.mail:hover{
- @apply text-slate-300 
-}
-.gitHub img:nth-child(2), .linkedin img:nth-child(2){
-  @apply hidden;
-}
-
-.gitHub:hover img:nth-child(1), .linkedin:hover img:nth-child(1){
-  @apply hidden
-}
-
-.gitHub:hover img:nth-child(2), .linkedin:hover img:nth-child(2){
-  @apply block
-}
-
-@media (max-width:1050px){
-  .about{
-    @apply gap-28 p-20
+@media (max-width: 1050px) {
+  .about {
+    @apply gap-28 p-36;
   }
 }
 
-@media (max-width: 1020px){
-  .about{
-    @apply flex flex-col
+@media (max-width: 1020px) {
+  .about {
+    @apply flex flex-col;
   }
-  .profileImg{
-    @apply w-400
+  .profileImg {
+    @apply w-400;
   }
-  .description{
-    @apply flex flex-col items-center
+  .description {
+    @apply flex flex-col items-center;
   }
-  .subTitle{
-    @apply text-lg
+  .subTitle {
+    @apply text-lg;
   }
-  .btnsAbout{
-    @apply text-sm items-center
+  .btnsAbout {
+    @apply text-sm items-center;
   }
-  .btnsAbout img{
-    @apply w-5
-  }
-}
-
-@media (max-width:590px){
-  .about{
-    @apply px-4
-  }
-  .profilePic{
-    @apply size-300 bg-[auto_360px]
-  }
-  .title{
-    @apply text-2xl
-  }
-  .subTitle{
-    @apply text-base
-  }
-  .location, .btnsAbout{
-    @apply text-sm
+  .btnsAbout img {
+    @apply w-5;
   }
 }
 
-@media (max-width: 390px){
-  .about{
-    @apply gap-20
+@media (max-width: 590px) {
+  .about {
+    @apply px-4;
   }
-  .profilePic{
-    @apply size-200 bg-[auto_220px] shadow-xl
+  .profilePic {
+    @apply size-300 bg-[auto_360px];
   }
-  .btnsLink{
-    @apply flex-col gap-1 p-1
+  .title {
+    @apply text-2xl;
   }
-  .socialMedia{
-    @apply hidden
+  .subTitle {
+    @apply text-base;
   }
-  .title{
-    @apply text-xl
+  .location,
+  .social-buttons {
+    @apply text-sm;
   }
-  .subTitle{
-    @apply text-sm
+
+}
+
+@media (max-width: 390px) {
+  .about {
+    @apply gap-20;
   }
-  .location, .btnsAbout{
-    @apply text-xs
+  .profilePic {
+    @apply size-200 bg-[auto_220px] shadow-xl;
   }
-  .location img:nth-child(1), .btnsAbout img{
-    @apply w-4
+  .title {
+    @apply text-xl;
   }
+  .subTitle {
+    @apply text-sm;
+  }
+  .location,
+  .social-buttons {
+    @apply text-xs;
+  }
+  .location img:nth-child(1),
+  .btnsAbout img {
+    @apply w-4;
+  }
+}
+
+ul.social-buttons {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+ul.social-buttons li {
+  list-style: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #353842;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+ul.social-buttons li::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 60px;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+ul.social-buttons li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  filter: blur(15px);
+  z-index: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+ul.social-buttons li.linkedin-button:hover,
+ul.social-buttons li.github-button:hover {
+  width: 100px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+}
+
+ul.social-buttons li.mail-button:hover {
+  width: 260px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+}
+
+ul.social-buttons li:hover::before {
+  opacity: 1;
+}
+
+ul.social-buttons li:hover::after {
+  opacity: 0.5;
+}
+
+ul.social-buttons li:hover a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.social-buttons li img {
+  transition: 0.5s;
+  transition-delay: 0.25s;
+  z-index: 2;
+}
+
+ul.social-buttons li:hover img {
+  transform: scale(0);
+  transition-delay: 0s;
+  display: none;
+}
+
+ul.social-buttons li .titleBtns {
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0);
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transform: scale(0);
+  transition: 0.5s;
+  transition-delay: 0s;
+  z-index: 2;
+}
+
+ul.social-buttons li:hover .titleBtns {
+  transform: scale(1);
+  transition-delay: 0.25s;
 }
