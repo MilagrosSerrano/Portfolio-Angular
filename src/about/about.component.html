@@ -1,14 +1,14 @@
-<section class="about" id="about" data-aos="fade-in" data-aos-duration="2200" data-aos-easing="linear">
+<section class="about flex items-center justify-center py-40 gap-48" id="about" data-aos="fade-in" data-aos-duration="2200" data-aos-easing="linear">
   <div
-    class="profilePic animate-float transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg"
+    class="profilePic size-400 rounded-full bg-center shadow-3xl ring-primary-2 ring-15 animate-float transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg"
   ></div>
   <div class="description">
-    <p class="title animate-slideUp">¡Hola, soy Milagros! 👋🏻</p>
-    <p class="subTitle animate-fadeIn delay-300">
+    <p class="title text-4xl sm:text-5xl animate-slideUp">¡Hola, soy Milagros! 👋🏻</p>
+    <p class="subTitle text-xl animate-fadeIn delay-300">
       Estudiante de Programación Full-Stack
     </p>
 
-    <p class="location">
+    <p class="location flex gap-1 py-1 items-end fill-red text-sm">
       <img [src]="location.src" [alt]="location.alt" [width]="width" /> Mar del
       Plata, Argentina.
     </p>
@@ -34,7 +34,7 @@
     </ul>
     <a
       href="MilagrosSerrano-FrontendDeveloper-CV.pdf"
-      class="cv transition-all duration-300 hover:scale-105 hover:bg-primary-1 hover:text-white"
+      class="cv flex w-44 border-2 border-solid border-primary-1 rounded-xl p-3 gap-2 transition-all duration-300 hover:scale-105 hover:bg-primary-1 hover:text-white"
       download="MilagrosSerrano-FrontendDeveloper-CV.pdf"
       ><img [src]="cv.src" [alt]="cv.alt" [width]="width" />Descarga mi CV</a
     >

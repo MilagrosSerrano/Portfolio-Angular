@@ -10,11 +10,13 @@ import AOS from 'aos';
   styleUrl: './app.component.css',
 })
 export class AppComponent implements OnInit {
-  ngOnInit() {
-    AOS.init();
+  ngOnInit(): void {
+    import('aos').then((AOS) => {
+      AOS.init();
       if ('scrollRestoration' in history) {
-    history.scrollRestoration = 'manual';
-  }
+        history.scrollRestoration = 'manual';
+      }
+    });
   }
   @HostListener('window:beforeunload')
   resetScroll() {

@@ -18,3 +18,78 @@ body{
 .title {
     @apply text-3xl font-bold;
 }
+
+/* Social buttons */
+ul.social-buttons {
+  @apply flex relative pt-[15px] pb-5 gap-5;
+  list-style: none;
+}
+
+ul.social-buttons li {
+  @apply relative flex items-center justify-center w-[50px] h-[50px] rounded-full cursor-pointer transition-all overflow-hidden;
+  background: #353842;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+ul.social-buttons li::before,
+ul.social-buttons li::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 60px;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+ul.social-buttons li::after {
+  filter: blur(15px);
+  z-index: 0;
+}
+
+ul.social-buttons li:hover {
+  width: 100px;
+  box-shadow: none;
+}
+
+ul.social-buttons li.mail-button:hover {
+  width: 260px;
+}
+
+ul.social-buttons li:hover::before {
+  opacity: 1;
+}
+
+ul.social-buttons li:hover::after {
+  opacity: 0.5;
+}
+
+ul.social-buttons li:hover a {
+  @apply flex items-center justify-center w-full h-full;
+}
+
+ul.social-buttons li img {
+  transition: 0.5s;
+  transition-delay: 0.25s;
+  z-index: 2;
+}
+
+ul.social-buttons li:hover img {
+  transform: scale(0);
+  display: none;
+  transition-delay: 0s;
+}
+
+ul.social-buttons li .titleBtns {
+  @apply absolute text-center w-full flex items-center justify-center text-white;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.5s;
+  transition-delay: 0s;
+  z-index: 2;
+}
+
+ul.social-buttons li:hover .titleBtns {
+  transform: scale(1);
+  transition-delay: 0.25s;
+}

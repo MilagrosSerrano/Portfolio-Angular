@@ -5,9 +5,6 @@ import { InfoComponent } from '../info/info.component';
 import { TechComponent } from '../tech/tech.component';
 import { ProyectsComponent } from '../proyects/proyects.component';
 import { FooterComponent } from '../shared/footer/footer.component';
-import { routes } from '../app/app.routes';
-import { RouterOutlet } from '@angular/router';
-
 @Component({
   selector: 'app-home-page',
   standalone: true,

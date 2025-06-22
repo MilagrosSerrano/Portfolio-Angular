@@ -1,6 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
+  safelist: [
+    // Background colors
+    {
+      pattern:
+        /^bg-(red|blue|green|yellow|purple|pink|gray|slate|zinc|neutral|stone|amber|orange|lime|emerald|teal|cyan|sky|indigo|violet|fuchsia|rose)-(50|100|200|300|400|500|600|700|800|900)$/,
+    },
+    // Text colors
+    {
+      pattern:
+        /^text-(red|blue|green|yellow|purple|pink|gray|slate|zinc|neutral|stone|amber|orange|lime|emerald|teal|cyan|sky|indigo|violet|fuchsia|rose)-(50|100|200|300|400|500|600|700|800|900)$/,
+    },
+    // Optional: hover/focus variants
+    {
+      pattern: /^hover:bg-(.+)$/,
+    },
+    {
+      pattern: /^hover:text-(.+)$/,
+    },
+  ],
   theme: {
     boxShadow: {
       "3xl": "0 0 100px 40px rgba(247, 7, 143, 1)",
