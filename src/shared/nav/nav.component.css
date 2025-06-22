@@ -28,10 +28,11 @@
   @apply p-4 flex flex-col items-start gap-10 mx-4 uppercase;
 }
 .mobileLinks li{
-  @apply w-full border-b-2 border-primary-1 py-2 flex justify-between 
+  @apply w-full border-b-2 border-primary-1 py-2
 }
-.mobileLinks li:hover{
-  @apply cursor-pointer
+
+.mobileLinks a{
+  @apply flex justify-between cursor-pointer
 }
 .mobileLinks a:hover{
   @apply border-none

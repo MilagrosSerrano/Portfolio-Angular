@@ -35,24 +35,31 @@
     </button>
     <ul class="mobileLinks">
       <li>
-        <a href="" (click)="setToggle()">Inicio</a>
-        <img [src]="goTo.src" [alt]="goTo.alt" [width]="goTo.width" />
+        <a href="" (click)="setToggle()"
+          >Inicio<img [src]="goTo.src" [alt]="goTo.alt" [width]="goTo.width"
+        /></a>
       </li>
       <li>
-        <a (click)="handleClick('info', 'center')">Sobre Mi</a>
-        <img [src]="goTo.src" [alt]="goTo.alt" [width]="goTo.width" />
+        <a (click)="handleClick('info', 'center')"
+          >Sobre Mi<img [src]="goTo.src" [alt]="goTo.alt" [width]="goTo.width"
+        /></a>
       </li>
       <li>
-        <a (click)="handleClick('tech', 'center')">Tecnologías</a>
-        <img [src]="goTo.src" [alt]="goTo.alt" [width]="goTo.width" />
+        <a (click)="handleClick('tech', 'center')"
+          >Tecnologías
+          <img [src]="goTo.src" [alt]="goTo.alt" [width]="goTo.width"
+        /></a>
       </li>
       <li>
-        <a (click)="handleClick('proyects', 'start')">Proyectos</a>
-        <img [src]="goTo.src" [alt]="goTo.alt" [width]="goTo.width" />
+        <a (click)="handleClick('proyects', 'start')"
+          >Proyectos
+          <img [src]="goTo.src" [alt]="goTo.alt" [width]="goTo.width"
+        /></a>
       </li>
       <li>
-        <a [routerLink]="['/contact']" (click)="setToggle()">Contacto</a>
-        <img [src]="goTo.src" [alt]="goTo.alt" [width]="goTo.width" />
+        <a [routerLink]="['/contact']" (click)="setToggle()"
+          >Contacto <img [src]="goTo.src" [alt]="goTo.alt" [width]="goTo.width"
+        /></a>
       </li>
     </ul>
   </div>
