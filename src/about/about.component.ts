@@ -10,10 +10,10 @@ import { Component } from '@angular/core';
 export class AboutComponent {
   width: string = '22';
   altImg: string = 'imagenPerfil';
-  imageURL: string = 'profilePic.jpg';
+  imageURL: string = '/assets/images/profilePic.jpg';
   profileSize: number = 400;
   location = {
-    src: '/assets/images/placeholder.png',
+    src: 'assets/images/placeholder.png',
     alt: 'location',
   };
   mail = {
