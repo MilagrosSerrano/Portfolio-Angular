@@ -25,6 +25,7 @@ module.exports = {
       "3xl": "0 0 100px 40px rgba(247, 7, 143, 1)",
       xl: "0 0 100px 32px rgba(247, 7, 143, 1)",
       lg: "0 0 30px 10px rgba(247, 7, 143, 0.5)",
+      md: "0 0 20px 2px rgba(247, 7, 143, 0.5)",
     },
     colors: {
       "primary-1": "#f7078f",

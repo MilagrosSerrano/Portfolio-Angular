@@ -39,7 +39,7 @@ ul.social-buttons li::after {
   border-radius: 60px;
   background: linear-gradient(45deg, var(--i), var(--j));
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.8s;
   z-index: 1;
 }
 
