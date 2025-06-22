@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import AOS from 'aos';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -11,12 +11,10 @@ import AOS from 'aos';
 })
 export class AppComponent implements OnInit {
   ngOnInit(): void {
-    import('aos').then((AOS) => {
-      AOS.init();
-      if ('scrollRestoration' in history) {
-        history.scrollRestoration = 'manual';
-      }
-    });
+    AOS.init();
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
   }
   @HostListener('window:beforeunload')
   resetScroll() {
