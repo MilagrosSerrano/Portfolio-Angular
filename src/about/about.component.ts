@@ -13,7 +13,7 @@ export class AboutComponent {
   imageURL: string = 'profilePic.jpg';
   profileSize: number = 400;
   location = {
-    src: 'placeholder.png',
+    src: '/assets/images/placeholder.png',
     alt: 'location',
   };
   mail = {

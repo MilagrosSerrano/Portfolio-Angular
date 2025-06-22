@@ -33,7 +33,7 @@ export class ProyectsComponent {
   };
 
   foodStore = {
-    srcP: './proyects/foodStore.png',
+    srcP: '/assets/images/proyects/foodStore.png',
     altP: 'foodStore',
     title: 'Nasty Food Store',
     tipo: 'Comida de Restaurante',
@@ -52,7 +52,7 @@ export class ProyectsComponent {
   };
 
   tateti = {
-    srcP: './proyects/tateti.png',
+    srcP: '/assets/images/proyects/tateti.png',
     altP: 'tateti',
     title: 'TA-TE-TI',
     tipo: 'Minijuego',
@@ -70,7 +70,7 @@ export class ProyectsComponent {
   };
 
   metas = {
-    srcP: './proyects/metas.png',
+    srcP: '/assets/images/proyects/metas.png',
     altP: 'metas',
     title: 'Metas App',
     tipo: 'Aplicación de metas',

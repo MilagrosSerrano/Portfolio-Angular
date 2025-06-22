@@ -1,5 +1,5 @@
 .profilePic {
-  background-image: url('/profilePic.jpg');
+  background-image: url('/assets/images/profilePic.jpg');
   background-size: auto 460px;
   border: none;
 }
@@ -54,7 +54,7 @@ svg {
     background-size: auto 220px;
   }
   .title {
-    @apply text-xl;
+    @apply text-lg;
   }
   .subTitle {
     @apply text-sm;
