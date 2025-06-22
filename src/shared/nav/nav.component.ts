@@ -26,6 +26,12 @@ export class NavComponent {
     width: '25'
   }
 
+  goTo = {
+    src:'./icons/arrow.png',
+    alt: 'go',
+    width: '25'
+  }
+
   toggle: boolean = false;
 
   get onContact(): boolean {

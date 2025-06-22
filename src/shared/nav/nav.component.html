@@ -1,9 +1,9 @@
 <nav class="navBar">
   <div class="desktop">
+    @if (!onContact){
     <button (click)="setToggle()" class="openBtn">
       <img [src]="menu.src" [alt]="menu.alt" [width]="menu.width" />
     </button>
-    @if (!onContact){
     <ul class="desktopLinks">
       <li><a href="">Inicio</a></li>
       <li><a (click)="scroll('info', 'center')">Sobre Mi</a></li>
@@ -11,11 +11,21 @@
       <li><a (click)="scroll('proyects', 'start')">Proyectos</a></li>
       <li><a [routerLink]="['/contact']">Contacto</a></li>
     </ul>
-    } @else {
-    <ul class="desktopLinks contact">
-      <li><a href=""><img [src]="volver.src" [alt]="volver.alt" [width]="volver.width">Volver al inicio</a></li>
+    }@else {
+    <button (click)="setToggle()" class="hidden">
+      <img [src]="menu.src" [alt]="menu.alt" [width]="menu.width" />
+    </button>
+    <ul class="contact">
+      <li>
+        <a href=""
+          ><img
+            [src]="volver.src"
+            [alt]="volver.alt"
+            [width]="volver.width"
+          />Volver al inicio</a
+        >
+      </li>
     </ul>
-
     }
   </div>
   @if (toggle && !onContact){
@@ -24,11 +34,26 @@
       <img [src]="menu.src2" [alt]="menu.alt" [width]="menu.width" />
     </button>
     <ul class="mobileLinks">
-      <li><a href="" (click)="setToggle()">Inicio</a></li>
-      <li><a (click)="handleClick('info', 'center')">Sobre Mi</a></li>
-      <li><a (click)="handleClick('tech', 'center')">Tecnologías</a></li>
-      <li><a (click)="handleClick('proyects', 'start')">Proyectos</a></li>
-      <li><a [routerLink]="['/contact']" (click)="setToggle()">Contacto</a></li>
+      <li>
+        <a href="" (click)="setToggle()">Inicio</a>
+        <img [src]="goTo.src" [alt]="goTo.alt" [width]="goTo.width" />
+      </li>
+      <li>
+        <a (click)="handleClick('info', 'center')">Sobre Mi</a>
+        <img [src]="goTo.src" [alt]="goTo.alt" [width]="goTo.width" />
+      </li>
+      <li>
+        <a (click)="handleClick('tech', 'center')">Tecnologías</a>
+        <img [src]="goTo.src" [alt]="goTo.alt" [width]="goTo.width" />
+      </li>
+      <li>
+        <a (click)="handleClick('proyects', 'start')">Proyectos</a>
+        <img [src]="goTo.src" [alt]="goTo.alt" [width]="goTo.width" />
+      </li>
+      <li>
+        <a [routerLink]="['/contact']" (click)="setToggle()">Contacto</a>
+        <img [src]="goTo.src" [alt]="goTo.alt" [width]="goTo.width" />
+      </li>
     </ul>
   </div>
   }
