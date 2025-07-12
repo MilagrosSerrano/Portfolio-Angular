@@ -1,7 +1,7 @@
 # 🚀 Portfolio Angular
 
 A modern, responsive portfolio built with Angular and Tailwind CSS.  
-Showcase your projects, skills, and contact info in a clean, animated single-page app.
+Showcase my projects, skills, and contact info in a clean, animated single-page app.
 
 ---
 
