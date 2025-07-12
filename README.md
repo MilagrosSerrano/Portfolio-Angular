@@ -18,7 +18,7 @@ Showcase your projects, skills, and contact info in a clean, animated single-pag
 
 ## 📸 Preview
 
-![Portfolio Screenshot](assets/images/screenshot.jpg)
+![Portfolio Screenshot](src/assets/images/screenshot.jpg)
 
 ---
 
