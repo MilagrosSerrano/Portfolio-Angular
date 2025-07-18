@@ -29,7 +29,7 @@ export class AboutComponent {
     src: './icons/github.png',
   };
   linkedin = {
-    url: 'https://www.linkedin.com/in/milagros-serrano-4a49b7307/',
+    url: 'https://www.linkedin.com/in/milagros-serrano-',
     src: './icons/linkedin.png',
   };
 }
